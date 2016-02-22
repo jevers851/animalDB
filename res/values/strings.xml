@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">animalDB</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_update">Update</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_animal_view">AnimalView</string>
+    <string name="ani_nm">Name:</string>
+    <string name="ani_count">Count:</string>
+    <string name="ani_dtm">Date:</string>
+    <string name="ani_com">Comment:</string>
+    <string name="ani_id">ID:</string>
+    <string name="delete_dialog_title">Delete current item</string>
+    <string name="delete_dialog_message">Are you sure you would like to delete this item?</string>
+    <string name="dialog_btnYes">Confirm</string>
+    <string name="dialog_btnNo">Cancel</string>
+    <string name="title_activity_animal_add">AnimalAdd</string>
+    <string name="action_add">Add</string>
+    
+    <string name="longitude">Longitude:</string>
+    <string name="latitude">Latitude</string>
+    
+</resources>

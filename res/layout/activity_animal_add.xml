@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.animaldb.AnimalAdd" >
+
+    <Spinner
+        android:id="@+id/cboANIMAL_CD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnAdd"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/action_add" />
+
+    <EditText
+        android:id="@+id/txtANI_COUNT_ADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/lblANI_COUNT_ADD"
+        android:layout_alignLeft="@+id/txtANI_TYPE_CD_ADD"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/lblANI_COUNT_ADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblANI_TYPE_CD_ADD"
+        android:layout_below="@+id/txtANI_TYPE_CD_ADD"
+        android:layout_marginTop="26dp"
+        android:text="@string/ani_count" />
+
+    <EditText
+        android:id="@+id/txtANI_COM_ADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblANI_COM_ADD"
+        android:layout_alignBottom="@+id/lblANI_COM_ADD"
+        android:layout_alignLeft="@+id/txtANI_DTM_ADD"
+        android:ems="10"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtANI_DTM_ADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblANI_DTM_ADD"
+        android:layout_alignBottom="@+id/lblANI_DTM_ADD"
+        android:layout_alignLeft="@+id/txtANI_COUNT_ADD"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/lblANI_COM_ADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblANI_DTM_ADD"
+        android:layout_centerVertical="true"
+        android:text="@string/ani_com" />
+
+    <TextView
+        android:id="@+id/lblANI_DTM_ADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtANI_COM_ADD"
+        android:layout_alignLeft="@+id/lblANI_COUNT_ADD"
+        android:layout_marginBottom="29dp"
+        android:text="@string/ani_dtm" />
+
+    <TextView
+        android:id="@+id/lblANI_TYPE_CD_ADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cboANIMAL_CD"
+        android:layout_alignTop="@+id/txtANI_TYPE_CD_ADD"
+        android:text="@string/ani_nm" />
+
+    <EditText
+        android:id="@+id/txtANI_TYPE_CD_ADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/cboANIMAL_CD"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:inputType="text" />
+
+</RelativeLayout>
